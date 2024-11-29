@@ -23,7 +23,7 @@
 		<li> | <a href="#imagem">Imagem</a> | </li>
 		<li> | <a href="#Músicas">Músicas</a> | </li>
 		<li> | <a href="#Contato">Comunidade</a> | </li>
-</a> | </li>
+
 			</ul>
 		</nav>
 	</header>
@@ -104,8 +104,44 @@
 <p> <a href="https://w.app/qLnmRj">Comunidade</a> </p>
 
 
+<form action="processar.php" method="post">
+	<!--Agrupamento de dados pessoais-->
+		<input type="text" placeholder="Digite seu nome"><br>
+		<input type="email" placeholder="Digite seu email"><br>
+		<input type="date"><br>
+		<input type="password" placeholder="Digite sua senha"><br>
+		<input type="tel" placeholder="Digite seu telefone"><br><br>
+
+
+<!--Agrupamento de seleções-->
+	<label for="pais">Selecione um país:</label><br>
+	<select id="pais">
+		<option value="brasil">Brasil</option>
+		<option value="eua">Estados Unidos</option>
+		<option value="canada">Canadá</option>
+	</select><br><br>
+	
+	Gênero:
+	<label><input type="radio" name="genero" value="masculino" required>Masculino</label>
+	<label><input type="radio" name="genero" value="feminino" required>Feminino</label>
+	<label><input type="radio" name="genero" value="outro" required>Outro</label>
+	<br><br>
+
+	<input type="checkbox"  id="termos"  name="termos" required>
+	<label for="termos">Aceito os termos</label><br><br>
+
+<!--Area de texto-->
+	<label for="mensagem">Deixe sua mensagem:</label><br>
+	<textarea id="mensagem" name="mensagem" placeholder="Escreva algo..." rows="5" cols="40"></textarea>
+	<br>
+
+	<button type="submit">Enviar</button>
+	<button type="reset">Redefinir</button>
+	<br><br>
+
+<!--Comentarios-->
+	<p> Esse Formulário foi feito com intenção de pegar informações pessoais e mensagens. Por favor, preencha todos os campos obrigatórios. </p>
+
+
+</body>
 </html>
-	<!--Fim da estrutura HTML-->
-...
-
-
